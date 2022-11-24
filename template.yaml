@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: telefonica-action-template
-  title: Spring Boot new action
+  title: Custom new action
   description: Create a new custom action
   tags:
     - custom
