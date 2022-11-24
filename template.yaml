@@ -1,0 +1,16 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: telefonica-action-template
+  title: Spring Boot new action
+  description: Create a new custom action
+  tags:
+    - custom
+spec:
+  owner: victor.barrancofernandez@telefonica.com
+  type: service
+
+  steps:
+    - id: notify-slack
+      name: Notify On Slack
+      action: notify:slack
