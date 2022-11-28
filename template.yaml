@@ -12,13 +12,12 @@ spec:
   parameters:
     - title: Choose sawgger location
       required:
-        - repoUrl
+        - swaggerUrl
         - component_id
         - description
-        - destination
         - owner
       properties:
-        repoUrl:
+        swaggerUrl:
           title: Swagger
           type: string
           description: Location of the swagger
@@ -31,10 +30,6 @@ spec:
           title: Description
           type: string
           description: Help others understand what this website is for.
-        destination:
-          title: Destination
-          type: string
-          description: Destination.
         owner:
           title: Owner
           type: string
@@ -43,13 +38,24 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+    - title: Choose a location
+      required:
+        - repoUrl
+      properties:
+        repoUrl:
+          title: Repository Location
+          type: string
+          ui:field: RepoUrlPicker
+          ui:options:
+            allowedHosts:
+              - github.com
   steps:
     - id: codegen:create
       name: Create App in codegen
       action: codegen:create
       input:
         values:
-          repoUrl: ${{ parameters.repoUrl }}
+          repoUrl: ${{ parameters.swaggerUrl }}
     - id: publish
       name: Publish
       action: publish:github
