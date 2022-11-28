@@ -13,6 +13,11 @@ spec:
     - title: Choose url location
       required:
         - repoUrl
+      properties:
+        repoUrl:
+          title: Swagger
+          type: string
+          description: Location of the swagger
   steps:
     - id: codegen:create
       name: Create App in codegen
