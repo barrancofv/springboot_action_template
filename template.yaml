@@ -22,4 +22,7 @@ spec:
     - id: codegen:create
       name: Create App in codegen
       action: codegen:create
+      input:
+        values:
+          repoUrl: ${{ parameters.repoUrl }}
 
