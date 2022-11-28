@@ -11,6 +11,6 @@ spec:
   type: service
 
   steps:
-    - id: notify-slack
-      name: Notify On Slack
-      action: notify:slack
+    - id: codegen:create
+      name: Create App in codegen
+      action: codegen:create
