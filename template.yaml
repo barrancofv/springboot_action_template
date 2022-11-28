@@ -25,14 +25,13 @@ spec:
       input:
         values:
           repoUrl: ${{ parameters.repoUrl }}
-     - id: publish
+    - id: publish
       name: Publish
       action: publish:github
       input:
         allowedHosts: ["github.com"]
         description: This is ${{ parameters.component_id }}
         repoUrl: ${{ parameters.repoUrl }}
-
     - id: register
       name: Register
       action: catalog:register
