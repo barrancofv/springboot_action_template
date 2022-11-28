@@ -10,14 +10,39 @@ spec:
   owner: victor.barrancofernandez@telefonica.com
   type: service
   parameters:
-    - title: Choose url location
+    - title: Choose sawgger location
       required:
         - repoUrl
+        - component_id
+        - description
+        - destination
+        - owner
       properties:
         repoUrl:
           title: Swagger
           type: string
           description: Location of the swagger
+       component_id:
+            title: Name
+            type: string
+            description: Unique name of the component
+            ui:field: EntityNamePicker
+        description:
+          title: Description
+          type: string
+          description: Help others understand what this website is for.
+        destination:
+          title: Destination
+          type: string
+          description: Destination.
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - Group
   steps:
     - id: codegen:create
       name: Create App in codegen
