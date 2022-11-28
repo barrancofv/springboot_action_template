@@ -10,7 +10,7 @@ spec:
   owner: victor.barrancofernandez@telefonica.com
   type: service
   parameters:
-   - title: Choose url location
+    - title: Choose url location
       required:
         - repoUrl
       properties:
@@ -23,3 +23,4 @@ spec:
     - id: codegen:create
       name: Create App in codegen
       action: codegen:create
+
