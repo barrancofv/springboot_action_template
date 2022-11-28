@@ -22,7 +22,7 @@ spec:
           title: Swagger
           type: string
           description: Location of the swagger
-       component_id:
+        component_id:
             title: Name
             type: string
             description: Unique name of the component
@@ -71,4 +71,3 @@ spec:
       - title: Open in catalog
         icon: catalog
         entityRef: ${{ steps.register.output.entityRef }}
-
