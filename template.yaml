@@ -10,7 +10,7 @@ spec:
   owner: victor.barrancofernandez@telefonica.com
   type: service
   parameters:
-    - title: Choose sawgger location
+    - title: Choose swagger location
       required:
         - swaggerUrl
       properties:
