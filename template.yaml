@@ -30,18 +30,10 @@ spec:
           title: Description
           type: string
           description: Help others understand what this website is for.
-        owner:
-          title: Owner
-          type: string
-          description: Owner of the component
-          ui:field: OwnerPicker
-          ui:options:
-            allowedKinds:
-              - Group
   steps:
     - id: codegen:create
       name: Create App in codegen
       action: codegen:create
       input:
         values:
-          repoUrl: ${{ parameters.swaggerUrl }}
+          swaggerUrl: ${{ parameters.swaggerUrl }}
