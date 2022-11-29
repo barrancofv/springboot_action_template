@@ -23,5 +23,4 @@ spec:
       name: Create App in codegen
       action: codegen:create
       input:
-        values:
-          swaggerUrl: ${{ parameters.swaggerUrl }}
+        swaggerUrl: ${{ parameters.swaggerUrl }}
