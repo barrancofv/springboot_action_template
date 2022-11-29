@@ -10,7 +10,7 @@ spec:
   owner: victor.barrancofernandez@telefonica.com
   type: service
   parameters:
-    - title: Choose swagger location
+    - title: Choose sawgger location
       required:
         - swaggerUrl
       properties:
@@ -25,5 +25,3 @@ spec:
       input:
         values:
           swaggerUrl: ${{ parameters.swaggerUrl }}
-    - id: publish
-      name: Publish
