@@ -13,22 +13,11 @@ spec:
     - title: Choose swagger location
       required:
         - swaggerUrl
-        - component_id
-        - description
       properties:
         swaggerUrl:
           title: Swagger
           type: string
           description: Location of the swagger
-        component_id:
-            title: Name
-            type: string
-            description: Unique name of the component
-            ui:field: EntityNamePicker
-        description:
-          title: Description
-          type: string
-          description: Help others understand what this website is for.
   steps:
     - id: codegen:create
       name: Create App in codegen
